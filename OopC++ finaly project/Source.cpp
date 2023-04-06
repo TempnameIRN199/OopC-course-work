@@ -7,7 +7,7 @@ public:
         cardNumber = 0;
         cardBalance = 0;
     }
-    ~Card();
+    ~Card() {}
     void setCardNumber(int cardNumber) { this->cardNumber = cardNumber; }
     void setCardBalance(int cardBalance) { this->cardBalance = cardBalance; }
     int getCardNumber() { return cardNumber; }
@@ -26,7 +26,7 @@ public:
         cardDate = 0;
         cardCVV = 0;
     }
-    ~DebitCard();
+    ~DebitCard() {}
     void setCardNumber(int cardNumber) { this->cardBalance = cardNumber; }
     void setCardBalance(int cardBalance) { this->cardBalance = cardBalance; }
     void setCardDate(double cardDate) { this->cardDate = cardDate; }
@@ -52,7 +52,7 @@ public:
         cardCVV = 0;
         cardLimit = 0;
     }
-    ~CreditCart();
+    ~CreditCart() {}
     void setCardNumber(int cardNumber) { this->cardNumber = cardNumber; }
     void setCardBalance(int cardBalance) { this->cardBalance = cardBalance; }
     void setCardDate(double cardDate) { this->cardDate = cardDate; }
@@ -80,7 +80,7 @@ public:
         expenseSum = 0;
         expenseDate = 0;
     }
-    ~Expense();
+    ~Expense() {}
     void setExpenseName(string expenseName) { this->expenseName = expenseName; }
     void setExpenseSum(int expenseSum) { this->expenseSum = expenseSum; }
     void setExpenseDate(double expenseDate) { this->expenseDate = expenseDate; }
@@ -101,7 +101,7 @@ public:
         categoryName = "";
         categorySum = 0;
     }
-    ~Category();
+    ~Category() {}
     void setCategoryName(string categoryName) { this->categoryName = categoryName; }
     void setCategorySum(int categorySum) { this->categorySum = categorySum; }
     string getCategoryName() { return categoryName; }
@@ -120,7 +120,7 @@ public:
         reportWeek = 0;
         reportMonth = 0;
     }
-    ~Report();
+    ~Report() {}
     void setReportDay(int reportDay) { this->reportDay = reportDay; }
     void setReportWeek(int reportWeek) { this->reportWeek = reportWeek; }
     void setReportMonth(int reportMonth) { this->reportMonth = reportMonth; }
@@ -143,7 +143,7 @@ public:
         ratingTopCategoryWeek = 0;
         ratingTopCategoryMonth = 0;
     }
-    ~Rating();
+    ~Rating() {}
     void setRatingTopExpenseWeek(int ratingTopExpenseWeek) { this->ratingTopExpenseWeek = ratingTopExpenseWeek; }
     void setRatingTopExpenseMonth(int ratingTopExpenseMonth) { this->ratingTopExpenseMonth = ratingTopExpenseMonth; }
     void setRatingTopCategoryWeek(int ratingTopCategoryWeek) { this->ratingTopCategoryWeek = ratingTopCategoryWeek; }
@@ -167,7 +167,7 @@ public:
         systemReport = Report();
         systemRating = Rating();
     }
-    ~System();
+    ~System() {}
     void setSystemReport(Report systemReport) { this->systemReport = systemReport; }
     void setSystemRating(Rating systemRating) { this->systemRating = systemRating; }
     Report getSystemReport() { return systemReport; }
